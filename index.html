@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Your Music Player</title>
+<script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
+<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <audio id="player" ontimeupdate="updateProgress()">
+      <source id="source" >
+        Audio is Not supported!!!
+    </audio>
+
+    <span id="currentlyPlayingSong"></span><em><span id="currentSong"></span></em>
+    <progress id="progress" value="0" max="100"></progress>
+    <div id="controls">
+    <i class="far fa-play-circle fa-5x" onclick="playAudio()"> </i>
+      <i class="far fa-pause-circle fa-5x" onclick="pauseAudio()"></i>
+<p>Volume:</p>
+  <i class="fas fa-volume-down fa"> </i>
+<input type="range" id="volumeSlider" min="0" max="1"name="" value="" step="0.01">
+  <i class="fas fa-volume-up fa"> </i>
+    </div>
+    <h4>My Songs:</h4>
+    <div id="songList">
+
+    </div>
+
+    <p>Muisc: <a href="https://www.bensound.com">https://www.bensound.com</a></p>
+    <script src="app.js">
+
+    </script>
+  </body>
+</html>
